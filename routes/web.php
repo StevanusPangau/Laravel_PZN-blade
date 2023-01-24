@@ -29,3 +29,7 @@ Route::get('/world', function () {
 Route::get('/html-encoding', function (Request $request) {
     return view('html-encoding', ['name' => $request->input('name')]);
 });
+
+Route::get('/disabled-blade', function () {
+    return view('disabled', ['name' => "Evan"]);
+});
