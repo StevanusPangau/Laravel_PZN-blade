@@ -33,3 +33,16 @@ Route::get('/html-encoding', function (Request $request) {
 Route::get('/disabled-blade', function () {
     return view('disabled', ['name' => "Evan"]);
 });
+
+Route::get('/each-once', function () {
+    return view('each-once.each', ["users" => [
+        [
+            "name" => "Evan",
+            "hobbies" => ["Coding", "Gaming"]
+        ],
+        [
+            "name" => "Stevanus",
+            "hobbies" => ["Coding", "Gaming"]
+        ]
+    ]]);
+});
