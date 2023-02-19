@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blade Extending</title>
+    <title>Blade Custom Echo</title>
 </head>
 
 <body>
-    {{-- Hello diambil dari App Service --}}
-    @hello($name)
+    {{ $person }}
 </body>
 
 </html>
